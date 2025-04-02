@@ -67,3 +67,40 @@
 - var does not have to be declared.
 - var is hoisted.
 - var binds to this.
+
+# Hoisting 
+- It is an techniq to used variable before declaration
+- Variables defined with **var** are hoisted to the top and can be initialized at any time.
+  ```
+     a = 10;
+     var a;
+  ```
+- **why var is hoisted**
+  - Its default behavior of javascript moving all declarations to the top of the current scope during the compilation
+ 
+# this keyword
+- Its uesd to access the property of object
+  ```
+    const person = {
+      firstName: "John",
+      lastName: "Doe",
+      id: 5566,
+      fullName: function() {
+        return this.firstName + " " + this.lastName;
+      }
+    };
+  ```
+# Constructor
+```
+  function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+  }
+
+  const myFather = new Person("John", "Doe", 50, "blue");
+  const myMother = new Person("Sally", "Rally", 48, "green");
+  const mySister = new Person("Anna", "Rally", 18, "green");
+  const mySelf = new Person("Johnny", "Rally", 22, "green");
+```
