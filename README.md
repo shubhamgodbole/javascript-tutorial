@@ -104,3 +104,10 @@
   const mySister = new Person("Anna", "Rally", 18, "green");
   const mySelf = new Person("Johnny", "Rally", 22, "green");
 ```
+
+# Event handling
+- It is an techniq of handel action perfom by user
+  - onclick
+  - onclick
+  - onload
+  - hover
